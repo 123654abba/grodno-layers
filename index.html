@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Grodno Layers — интерактивный одностраничный портфолио-проект об истории и архитектуре Гродно."
+    />
+    <title>Grodno Layers | Гродно: город на слоях времени</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-noise" aria-hidden="true"></div>
+
+    <header class="site-header" id="top">
+      <a class="brand" href="#home" aria-label="Grodno Layers">
+        <span class="brand-mark"></span>
+        <span>Grodno Layers</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#home" data-i18n="navHome">Главная</a>
+        <a href="#route" data-i18n="navRoute">Маршрут</a>
+        <a href="#architecture" data-i18n="navArchitecture">Архитектура</a>
+        <a href="#timeline" data-i18n="navTimeline">Таймлайн</a>
+        <a href="#gallery" data-i18n="navGallery">Галерея</a>
+        <a href="#contacts" data-i18n="navContacts">Контакты</a>
+      </nav>
+
+      <button class="lang-toggle" type="button" aria-label="Switch language">
+        <span class="lang-current">RU</span>
+        <span class="lang-divider">/</span>
+        <span class="lang-next">EN</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero section" id="home">
+        <div class="hero-copy reveal">
+          <p class="eyebrow" data-i18n="heroEyebrow">Историческая прогулка над Неманом</p>
+          <h1 data-i18n="heroTitle">Гродно: город на слоях времени</h1>
+          <p class="hero-lead" data-i18n="heroLead">
+            Интерактивная прогулка по архитектуре, замкам и исторической памяти города над Неманом.
+          </p>
+          <div class="hero-actions" aria-label="Hero actions">
+            <a class="button primary" href="#idea" data-i18n="startWalk">Начать прогулку</a>
+            <a class="button ghost" href="#route" data-i18n="watchRoute">Смотреть маршрут</a>
+          </div>
+          <dl class="hero-facts">
+            <div>
+              <dt>XII</dt>
+              <dd data-i18n="factCentury">век Коложи</dd>
+            </div>
+            <div>
+              <dt>5</dt>
+              <dd data-i18n="factRoute">точек маршрута</dd>
+            </div>
+            <div>
+              <dt>6</dt>
+              <dd data-i18n="factLayers">архитектурных слоев</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero-art reveal" aria-label="CSS illustration of Grodno skyline">
+          <div class="archive-grid"></div>
+          <div class="moon"></div>
+          <div class="hill"></div>
+          <div class="castle">
+            <span class="tower tower-left"></span>
+            <span class="tower tower-right"></span>
+            <span class="keep"></span>
+            <span class="roof roof-left"></span>
+            <span class="roof roof-right"></span>
+          </div>
+          <div class="city-line line-one"></div>
+          <div class="city-line line-two"></div>
+          <div class="river"></div>
+          <div class="route-glow"></div>
+        </div>
+      </section>
+
+      <section class="section idea" id="idea">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="ideaEyebrow">Идея проекта</p>
+          <h2 data-i18n="ideaTitle">Город, который читается слоями</h2>
+        </div>
+        <div class="idea-panel reveal">
+          <p data-i18n="ideaText">
+            Гродно интересен тем, что в одном городе видны разные исторические слои:
+            древнерусская архитектура, замковая гора, королевская история, барокко,
+            старые улицы и городская застройка XIX–XX веков. Этот сайт собирает их
+            в одну визуальную прогулку.
+          </p>
+          <div class="idea-diagram" aria-hidden="true">
+            <span>Old Rus</span>
+            <span>Castle Hill</span>
+            <span>Baroque</span>
+            <span>Urban Memory</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section route-section" id="route">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="routeEyebrow">Маршрут</p>
+          <h2 data-i18n="routeTitle">Пять точек исторической прогулки</h2>
+        </div>
+
+        <div class="route-layout">
+          <div class="route-line" aria-label="Interactive route timeline">
+            <button class="route-point reveal" type="button" data-place="kalozha">
+              <span class="point-index">01</span>
+              <span class="point-copy">
+                <strong data-i18n="placeKalozha">Коложская церковь</strong>
+                <em data-i18n="periodKalozha">XII век</em>
+              </span>
+            </button>
+            <button class="route-point reveal" type="button" data-place="oldCastle">
+              <span class="point-index">02</span>
+              <span class="point-copy">
+                <strong data-i18n="placeOldCastle">Старый замок</strong>
+                <em data-i18n="periodOldCastle">XI–XVI века</em>
+              </span>
+            </button>
+            <button class="route-point reveal" type="button" data-place="newCastle">
+              <span class="point-index">03</span>
+              <span class="point-copy">
+                <strong data-i18n="placeNewCastle">Новый замок</strong>
+                <em data-i18n="periodNewCastle">XVIII век</em>
+              </span>
+            </button>
+            <button class="route-point reveal" type="button" data-place="farny">
+              <span class="point-index">04</span>
+              <span class="point-copy">
+                <strong data-i18n="placeFarny">Фарный костёл Святого Франциска Ксаверия</strong>
+                <em data-i18n="periodFarny">XVII–XVIII века</em>
+              </span>
+            </button>
+            <button class="route-point reveal" type="button" data-place="sovetskaya">
+              <span class="point-index">05</span>
+              <span class="point-copy">
+                <strong data-i18n="placeSovetskaya">Старый центр и улица Советская</strong>
+                <em data-i18n="periodSovetskaya">XIX–XX века</em>
+              </span>
+            </button>
+          </div>
+
+          <aside class="route-note reveal" aria-label="Route note">
+            <div class="note-mark">G</div>
+            <p data-i18n="routeNote">
+              Маршрут построен как визуальная прогулка: от каменной архитектуры XII века
+              к замкам, барочным доминантам и городской ткани старого центра.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section architecture" id="architecture">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="architectureEyebrow">Архитектура</p>
+          <h2 data-i18n="architectureTitle">Архитектурные слои</h2>
+        </div>
+
+        <div class="cards-grid">
+          <article class="layer-card reveal" data-layer="oldRus">
+            <span class="css-icon arch-old"></span>
+            <h3 data-i18n="oldRusTitle">Древнерусская архитектура</h3>
+            <p data-i18n="oldRusText">Каменная пластика, полихромные вставки и редкая школа XII века.</p>
+            <button class="text-button" type="button" data-layer-modal="oldRus" data-i18n="more">Подробнее</button>
+          </article>
+          <article class="layer-card reveal" data-layer="gothic">
+            <span class="css-icon arch-gothic"></span>
+            <h3 data-i18n="gothicTitle">Готика и оборонительные формы</h3>
+            <p data-i18n="gothicText">Башни, укрепления и логика города на высоком берегу Немана.</p>
+            <button class="text-button" type="button" data-layer-modal="gothic" data-i18n="more">Подробнее</button>
+          </article>
+          <article class="layer-card reveal" data-layer="renaissance">
+            <span class="css-icon arch-renaissance"></span>
+            <h3 data-i18n="renaissanceTitle">Ренессанс</h3>
+            <p data-i18n="renaissanceText">Королевские резиденции, сграффито и европейская придворная культура.</p>
+            <button class="text-button" type="button" data-layer-modal="renaissance" data-i18n="more">Подробнее</button>
+          </article>
+          <article class="layer-card reveal" data-layer="baroque">
+            <span class="css-icon arch-baroque"></span>
+            <h3 data-i18n="baroqueTitle">Барокко</h3>
+            <p data-i18n="baroqueText">Динамичные фасады, костёлы, монастыри и выразительные вертикали центра.</p>
+            <button class="text-button" type="button" data-layer-modal="baroque" data-i18n="more">Подробнее</button>
+          </article>
+          <article class="layer-card reveal" data-layer="classic">
+            <span class="css-icon arch-classic"></span>
+            <h3 data-i18n="classicTitle">Классицизм</h3>
+            <p data-i18n="classicText">Сдержанная симметрия дворцовых и городских фасадов XVIII–XIX веков.</p>
+            <button class="text-button" type="button" data-layer-modal="classic" data-i18n="more">Подробнее</button>
+          </article>
+          <article class="layer-card reveal" data-layer="urban">
+            <span class="css-icon arch-urban"></span>
+            <h3 data-i18n="urbanTitle">Городская застройка XIX–XX веков</h3>
+            <p data-i18n="urbanText">Пешеходные улицы, торговые дома и живая повседневность старого центра.</p>
+            <button class="text-button" type="button" data-layer-modal="urban" data-i18n="more">Подробнее</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="section timeline" id="timeline">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="timelineEyebrow">Таймлайн</p>
+          <h2 data-i18n="timelineTitle">Как складывался образ города</h2>
+        </div>
+        <div class="timeline-track reveal">
+          <article>
+            <span>XII</span>
+            <p data-i18n="time1">Коложская церковь</p>
+          </article>
+          <article>
+            <span>XIV–XVI</span>
+            <p data-i18n="time2">Укрепление и развитие Старого замка</p>
+          </article>
+          <article>
+            <span>XVII–XVIII</span>
+            <p data-i18n="time3">Барочные храмы и монастыри</p>
+          </article>
+          <article>
+            <span>XVIII</span>
+            <p data-i18n="time4">Новый замок и политическая история</p>
+          </article>
+          <article>
+            <span>XIX</span>
+            <p data-i18n="time5">Развитие городской застройки</p>
+          </article>
+          <article>
+            <span>XX</span>
+            <p data-i18n="time6">Смена эпох и сохранение исторического центра</p>
+          </article>
+          <article>
+            <span>XXI</span>
+            <p data-i18n="time7">Город как культурный маршрут</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section gallery" id="gallery">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="galleryEyebrow">Галерея</p>
+          <h2 data-i18n="galleryTitle">CSS-постеры для будущих фотографий</h2>
+        </div>
+
+        <div class="poster-grid">
+          <article class="poster poster-castle reveal">
+            <span data-i18n="poster1">Замок над Неманом</span>
+          </article>
+          <article class="poster poster-kalozha reveal">
+            <span data-i18n="poster2">Коложа на высоком берегу</span>
+          </article>
+          <article class="poster poster-baroque reveal">
+            <span data-i18n="poster3">Барочный силуэт Фарного костёла</span>
+          </article>
+          <article class="poster poster-evening reveal">
+            <span data-i18n="poster4">Старый центр вечером</span>
+          </article>
+          <article class="poster poster-detail reveal">
+            <span data-i18n="poster5">Архитектурные детали</span>
+          </article>
+          <article class="poster poster-routes reveal">
+            <span data-i18n="poster6">Гродно как город маршрутов</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section map-section" id="map">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="mapEyebrow">Мини-карта</p>
+          <h2 data-i18n="mapTitle">Художественная схема маршрута</h2>
+        </div>
+        <div class="mini-map reveal">
+          <svg viewBox="0 0 900 430" role="img" aria-labelledby="mapTitleSvg mapDescSvg">
+            <title id="mapTitleSvg">Grodno route map</title>
+            <desc id="mapDescSvg">Stylized route along the Neman River with five interactive points.</desc>
+            <path class="map-river" d="M-20,305 C150,250 220,355 380,298 C520,250 590,160 760,210 C830,230 890,215 930,185" />
+            <path class="map-route" d="M120,248 C220,170 305,160 385,205 S530,295 615,210 S735,110 800,158" />
+            <g class="map-point" data-place="kalozha" transform="translate(120 248)">
+              <circle r="13"></circle>
+              <text x="22" y="-14" data-i18n-svg="mapKalozha">Коложа</text>
+            </g>
+            <g class="map-point" data-place="oldCastle" transform="translate(300 174)">
+              <circle r="13"></circle>
+              <text x="22" y="-14" data-i18n-svg="mapOldCastle">Старый замок</text>
+            </g>
+            <g class="map-point" data-place="newCastle" transform="translate(465 252)">
+              <circle r="13"></circle>
+              <text x="22" y="34" data-i18n-svg="mapNewCastle">Новый замок</text>
+            </g>
+            <g class="map-point" data-place="farny" transform="translate(640 186)">
+              <circle r="13"></circle>
+              <text x="22" y="-14" data-i18n-svg="mapFarny">Фарный костёл</text>
+            </g>
+            <g class="map-point" data-place="sovetskaya" transform="translate(800 158)">
+              <circle r="13"></circle>
+              <text x="-170" y="-28" data-i18n-svg="mapSovetskaya">ул. Советская</text>
+            </g>
+          </svg>
+          <div class="map-caption">
+            <span data-i18n="mapCaption">Схема не является географической картой: это визуальный маршрут по историческим слоям.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section why">
+        <div class="why-panel reveal">
+          <p class="eyebrow" data-i18n="whyEyebrow">Почему это интересно</p>
+          <h2 data-i18n="whyTitle">Гродно можно читать как книгу</h2>
+          <p data-i18n="whyText">
+            Гродно можно читать как книгу: каждый район, храм, замок и улица
+            показывают отдельный слой времени. Этот проект показывает город не как
+            набор достопримечательностей, а как живую систему памяти, архитектуры и маршрутов.
+          </p>
+        </div>
+      </section>
+
+      <section class="section sources" aria-label="Fact sources">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="sourcesEyebrow">Факты</p>
+          <h2 data-i18n="sourcesTitle">Источники для исторических сведений</h2>
+        </div>
+        <div class="sources-list reveal">
+          <a href="https://whc.unesco.org/en/tentativelists/1895/" target="_blank" rel="noreferrer">UNESCO: SS. Boris and Gleb (Kalozha) Church</a>
+          <a href="https://www.belarus.by/en/travel/belarus-life/old-new-castles-grodno" target="_blank" rel="noreferrer">Belarus.by: Old Castle and New Castle in Grodno</a>
+          <a href="https://grodno-museum.by/en/new-castle/" target="_blank" rel="noreferrer">Grodno Museum: The New Castle</a>
+          <a href="https://grodno-museum.by/en/the-old-castle/" target="_blank" rel="noreferrer">Grodno Museum: The Old Castle</a>
+          <a href="https://www.belarus.by/en/about-belarus/architecture" target="_blank" rel="noreferrer">Belarus.by: Architecture in Belarus</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contacts">
+      <div>
+        <a class="brand footer-brand" href="#top">
+          <span class="brand-mark"></span>
+          <span>Grodno Layers</span>
+        </a>
+        <p data-i18n="footerCredit">Designed as a portfolio concept by Ksu / @aihappyfuture</p>
+      </div>
+      <address>
+        <a href="mailto:aihappyfuture@gmail.com">aihappyfuture@gmail.com</a>
+        <a href="https://t.me/aihappyfuture" target="_blank" rel="noreferrer">@aihappyfuture</a>
+        <a href="#" aria-label="GitHub placeholder">GitHub: #</a>
+        <a href="#" aria-label="Telegram placeholder">Telegram: #</a>
+      </address>
+    </footer>
+
+    <div class="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-backdrop" data-close-modal></div>
+      <article class="modal-card" role="document">
+        <button class="modal-close" type="button" aria-label="Close" data-close-modal>×</button>
+        <p class="modal-period" id="modal-period"></p>
+        <h2 id="modal-title"></h2>
+        <p id="modal-text"></p>
+      </article>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
