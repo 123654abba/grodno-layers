@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design Board | Новый замок в Гродно</title>
+    <style>
+      :root {
+        --ink: #f2eee6;
+        --paper: #d8cbb8;
+        --muted: #9f9689;
+        --bg: #11100e;
+        --bg-2: #1a1714;
+        --line: rgba(216, 203, 184, 0.22);
+        --brass: #bd9655;
+        --brick: #8a463a;
+        --river: #6d9297;
+        --shadow: 0 28px 70px rgba(0, 0, 0, 0.34);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        color: var(--ink);
+        background:
+          linear-gradient(90deg, rgba(216, 203, 184, 0.035) 1px, transparent 1px),
+          linear-gradient(rgba(216, 203, 184, 0.025) 1px, transparent 1px),
+          radial-gradient(circle at 18% 8%, rgba(138, 70, 58, 0.22), transparent 34%),
+          radial-gradient(circle at 82% 0%, rgba(109, 146, 151, 0.14), transparent 32%),
+          #0e0d0c;
+        background-size: 72px 72px, 72px 72px, auto, auto, auto;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.55;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .wrap {
+        width: min(1180px, calc(100% - 32px));
+        margin: 0 auto;
+      }
+
+      .hero {
+        min-height: 84vh;
+        display: grid;
+        align-items: center;
+        padding: 72px 0 48px;
+      }
+
+      .kicker {
+        margin: 0 0 16px;
+        color: var(--brass);
+        font-size: 0.78rem;
+        font-weight: 850;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        overflow-wrap: anywhere;
+      }
+
+      h1 {
+        max-width: 900px;
+        margin: 0;
+        font-size: clamp(3rem, 8vw, 6.6rem);
+        line-height: 0.96;
+        letter-spacing: 0;
+      }
+
+      .lead {
+        max-width: 780px;
+        margin: 28px 0 0;
+        color: var(--paper);
+        font-size: clamp(1.08rem, 2vw, 1.35rem);
+      }
+
+      .notice {
+        display: grid;
+        gap: 10px;
+        max-width: 780px;
+        margin-top: 34px;
+        padding: 18px;
+        border: 1px solid rgba(189, 150, 85, 0.35);
+        background: rgba(189, 150, 85, 0.08);
+      }
+
+      .notice strong {
+        color: var(--brass);
+      }
+
+      section {
+        padding: 70px 0;
+      }
+
+      .section-head {
+        max-width: 760px;
+        margin-bottom: 30px;
+      }
+
+      h2 {
+        margin: 0;
+        font-size: clamp(2rem, 4vw, 3.4rem);
+        line-height: 1.06;
+      }
+
+      .section-head p {
+        margin: 18px 0 0;
+        color: var(--muted);
+        font-size: 1.05rem;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .card {
+        min-height: 520px;
+        border: 1px solid var(--line);
+        background:
+          linear-gradient(160deg, rgba(216, 203, 184, 0.07), rgba(216, 203, 184, 0.018)),
+          rgba(22, 20, 18, 0.88);
+        box-shadow: var(--shadow);
+      }
+
+      .card-body {
+        padding: 22px;
+      }
+
+      .tag {
+        display: inline-flex;
+        margin-bottom: 16px;
+        padding: 6px 9px;
+        border: 1px solid rgba(189, 150, 85, 0.42);
+        color: var(--brass);
+        font-size: 0.72rem;
+        font-weight: 850;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      h3 {
+        margin: 0;
+        font-size: 1.45rem;
+        line-height: 1.15;
+      }
+
+      .card p {
+        color: var(--muted);
+      }
+
+      .mock {
+        position: relative;
+        height: 230px;
+        border-bottom: 1px solid var(--line);
+        overflow: hidden;
+        background: #171410;
+      }
+
+      .mock::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+          linear-gradient(rgba(216, 203, 184, 0.08) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(216, 203, 184, 0.06) 1px, transparent 1px);
+        background-size: 32px 32px;
+        opacity: 0.58;
+      }
+
+      .mock-title {
+        position: absolute;
+        left: 20px;
+        right: 20px;
+        bottom: 18px;
+        z-index: 2;
+        font-size: 1.5rem;
+        font-weight: 850;
+        line-height: 1.06;
+      }
+
+      .dossier .mock {
+        background:
+          linear-gradient(145deg, rgba(216, 203, 184, 0.1), transparent 46%),
+          #181512;
+      }
+
+      .dossier .mock::after {
+        content: "";
+        position: absolute;
+        right: 26px;
+        top: 28px;
+        width: 112px;
+        height: 148px;
+        border: 1px solid rgba(216, 203, 184, 0.32);
+        background:
+          repeating-linear-gradient(0deg, rgba(216, 203, 184, 0.12) 0 1px, transparent 1px 13px),
+          rgba(12, 11, 10, 0.35);
+        transform: rotate(3deg);
+      }
+
+      .editorial .mock {
+        background:
+          linear-gradient(90deg, rgba(189, 150, 85, 0.14), transparent 44%),
+          #151412;
+      }
+
+      .editorial .mock::after {
+        content: "";
+        position: absolute;
+        right: 24px;
+        bottom: 0;
+        width: 150px;
+        height: 150px;
+        border: 1px solid rgba(216, 203, 184, 0.28);
+        border-bottom: 0;
+        background:
+          linear-gradient(90deg, transparent 32%, rgba(216, 203, 184, 0.18) 33% 35%, transparent 36%),
+          linear-gradient(180deg, rgba(216, 203, 184, 0.08), transparent);
+      }
+
+      .map .mock {
+        background:
+          radial-gradient(circle at 70% 25%, rgba(109, 146, 151, 0.18), transparent 28%),
+          #121513;
+      }
+
+      .map .mock::after {
+        content: "";
+        position: absolute;
+        left: 28px;
+        right: 24px;
+        top: 78px;
+        height: 86px;
+        border-top: 3px solid rgba(109, 146, 151, 0.55);
+        border-bottom: 1px dashed rgba(189, 150, 85, 0.55);
+        transform: skewY(-7deg);
+      }
+
+      .swatches {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 18px;
+      }
+
+      .swatch {
+        width: 42px;
+        height: 42px;
+        border: 1px solid rgba(255, 255, 255, 0.16);
+      }
+
+      ul {
+        margin: 18px 0 0;
+        padding-left: 18px;
+        color: var(--paper);
+      }
+
+      li + li {
+        margin-top: 8px;
+      }
+
+      .rules {
+        display: grid;
+        grid-template-columns: 0.9fr 1.1fr;
+        gap: 18px;
+      }
+
+      .panel {
+        padding: 24px;
+        border: 1px solid var(--line);
+        background: rgba(22, 20, 18, 0.78);
+      }
+
+      .no {
+        border-color: rgba(138, 70, 58, 0.44);
+      }
+
+      .yes {
+        border-color: rgba(189, 150, 85, 0.34);
+      }
+
+      .panel h3 {
+        color: var(--brass);
+      }
+
+      .flow {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .step {
+        min-height: 150px;
+        padding: 18px;
+        border: 1px solid var(--line);
+        background: rgba(216, 203, 184, 0.04);
+      }
+
+      .step span {
+        display: block;
+        color: var(--brass);
+        font-weight: 850;
+        margin-bottom: 12px;
+      }
+
+      footer {
+        padding: 44px 0 70px;
+        color: var(--muted);
+      }
+
+      @media (max-width: 900px) {
+        .grid,
+        .rules,
+        .flow {
+          grid-template-columns: 1fr;
+        }
+
+        .card {
+          min-height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <section class="hero">
+        <div>
+          <p class="kicker">Design selection board</p>
+          <h1>Сначала выбираем визуал, потом переделываем сайт</h1>
+          <p class="lead">
+            Это отдельная страница для выбора направления сайта про Новый замок в Гродно.
+            Она нужна, чтобы не спорить с готовым CSS и не получать снова “космосферу”.
+          </p>
+          <div class="notice">
+            <strong>Главное правило:</strong>
+            <span>финальный сайт не трогаем, пока не выберем стиль: архивное досье, дворцовый editorial или карту-хронологию.</span>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <p class="kicker">3 directions</p>
+          <h2>Три нормальных направления для исторического сайта</h2>
+          <p>Каждый вариант можно взять целиком или смешать с другим, но сначала надо выбрать основу.</p>
+        </div>
+
+        <div class="grid">
+          <article class="card dossier">
+            <div class="mock">
+              <div class="mock-title">Архивное досье</div>
+            </div>
+            <div class="card-body">
+              <span class="tag">вариант A</span>
+              <h3>Документы, карточки, музейные подписи</h3>
+              <p>Подходит, если хотим ощущение расследования: пользователь открывает историю дворца как папку с материалами.</p>
+              <div class="swatches">
+                <span class="swatch" style="background:#11100e"></span>
+                <span class="swatch" style="background:#d8cbb8"></span>
+                <span class="swatch" style="background:#bd9655"></span>
+                <span class="swatch" style="background:#675b4e"></span>
+              </div>
+              <ul>
+                <li>Темный стол, бумага, печати, архивные рамки.</li>
+                <li>Хорошо для фактов, цитат, дат, источников.</li>
+                <li>Риск: может стать сухо, если не добавить драматургию.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card editorial">
+            <div class="mock">
+              <div class="mock-title">Дворцовый editorial</div>
+            </div>
+            <div class="card-body">
+              <span class="tag">вариант B</span>
+              <h3>Журнальная история с большим первым экраном</h3>
+              <p>Подходит, если сайт должен выглядеть дороже и портфолийнее: крупная типографика, спокойный ритм, дворцовые детали.</p>
+              <div class="swatches">
+                <span class="swatch" style="background:#151412"></span>
+                <span class="swatch" style="background:#f2eee6"></span>
+                <span class="swatch" style="background:#bd9655"></span>
+                <span class="swatch" style="background:#8a463a"></span>
+              </div>
+              <ul>
+                <li>Крупный заголовок, воздух, сильный hero.</li>
+                <li>Больше “премиум-лонгрид”, меньше учебного проекта.</li>
+                <li>Риск: нужны очень аккуратные пропорции и меньше карточек.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card map">
+            <div class="mock">
+              <div class="mock-title">Карта и хронология</div>
+            </div>
+            <div class="card-body">
+              <span class="tag">вариант C</span>
+              <h3>Маршрут по событиям, а не по объектам</h3>
+              <p>Подходит, если хотим интерактив: линия времени, берег Немана, 1744, 1793, музейный слой.</p>
+              <div class="swatches">
+                <span class="swatch" style="background:#121513"></span>
+                <span class="swatch" style="background:#6d9297"></span>
+                <span class="swatch" style="background:#bd9655"></span>
+                <span class="swatch" style="background:#d8cbb8"></span>
+              </div>
+              <ul>
+                <li>Линии карты, подписи, точки решений.</li>
+                <li>Хорошо раскрывает 1737–1742, 1744 и 1793.</li>
+                <li>Риск: нельзя скатиться обратно в абстрактную sci-fi схему.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <p class="kicker">visual rules</p>
+          <h2>Что запрещаем и что разрешаем</h2>
+          <p>Это нужно, чтобы финальный сайт не ушел опять в случайные эффекты.</p>
+        </div>
+
+        <div class="rules">
+          <div class="panel no">
+            <h3>Не используем</h3>
+            <ul>
+              <li>Космос, неоновые ореолы, синий sci-fi glow.</li>
+              <li>Случайные “красивые” картинки без связи с замком.</li>
+              <li>Слишком много одинаковых карточек как в глоссарии.</li>
+              <li>Героический фэнтези-замок вместо исторического дворца.</li>
+            </ul>
+          </div>
+
+          <div class="panel yes">
+            <h3>Используем</h3>
+            <ul>
+              <li>Планы, фасадные линии, чертежную сетку.</li>
+              <li>Архивную бумагу, музейные этикетки, аккуратные даты.</li>
+              <li>Камень, латунь, приглушенный кирпичный, речной серо-синий.</li>
+              <li>Один главный сюжет: дворец, сеймы, 1793, память.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <p class="kicker">workflow</p>
+          <h2>Как работаем дальше</h2>
+          <p>Вот так мы не будем переделывать сайт наугад.</p>
+        </div>
+
+        <div class="flow">
+          <div class="step">
+            <span>1</span>
+            Ты выбираешь A, B, C или смесь, например “B + карта из C”.
+          </div>
+          <div class="step">
+            <span>2</span>
+            Я делаю один экран-прототип в этом стиле, пока не трогая весь сайт.
+          </div>
+          <div class="step">
+            <span>3</span>
+            Мы правим визуал: цвета, типографику, плотность, настроение.
+          </div>
+          <div class="step">
+            <span>4</span>
+            Только после этого переносим стиль на весь сайт и обновляем GitHub Pages.
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="wrap">
+      Design board for New Castle Grodno. Built as a shared choice page before redesigning the live site.
+      <br />
+      Live site: <a href="./">open current page</a>
+    </footer>
+  </body>
+</html>
