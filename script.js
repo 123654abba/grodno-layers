@@ -1,158 +1,158 @@
 const translations = {
   ru: {
     navHome: "Главная",
-    navRoute: "Маршрут",
+    navRoute: "Главы",
     navArchitecture: "Архитектура",
-    navTimeline: "Таймлайн",
-    navGallery: "Галерея",
+    navTimeline: "Хронология",
+    navGallery: "Визуал",
     navContacts: "Контакты",
-    heroEyebrow: "Историческая прогулка над Неманом",
-    heroTitle: "Гродно: город на слоях времени",
-    heroLead: "Интерактивная прогулка по архитектуре, замкам и исторической памяти города над Неманом.",
-    startWalk: "Начать прогулку",
-    watchRoute: "Смотреть маршрут",
-    factCentury: "век Коложи",
-    factRoute: "точек маршрута",
-    factLayers: "архитектурных слоев",
-    ideaEyebrow: "Идея проекта",
-    ideaTitle: "Город, который читается слоями",
-    ideaText: "Гродно интересен тем, что в одном городе видны разные исторические слои: древнерусская архитектура, замковая гора, королевская история, барокко, старые улицы и городская застройка XIX–XX веков. Этот сайт собирает их в одну визуальную прогулку.",
-    routeEyebrow: "Маршрут",
-    routeTitle: "Пять точек исторической прогулки",
-    placeKalozha: "Коложская церковь",
-    periodKalozha: "XII век",
-    placeOldCastle: "Старый замок",
-    periodOldCastle: "XI–XVI века",
-    placeNewCastle: "Новый замок",
-    periodNewCastle: "XVIII век",
-    placeFarny: "Фарный костёл Святого Франциска Ксаверия",
-    periodFarny: "XVII–XVIII века",
-    placeSovetskaya: "Старый центр и улица Советская",
-    periodSovetskaya: "XIX–XX века",
-    routeNote: "Маршрут построен как визуальная прогулка: от каменной архитектуры XII века к замкам, барочным доминантам и городской ткани старого центра.",
-    architectureEyebrow: "Архитектура",
-    architectureTitle: "Архитектурные слои",
-    oldRusTitle: "Древнерусская архитектура",
-    oldRusText: "Каменная пластика, полихромные вставки и редкая школа XII века.",
-    gothicTitle: "Готика и оборонительные формы",
-    gothicText: "Башни, укрепления и логика города на высоком берегу Немана.",
-    renaissanceTitle: "Ренессанс",
-    renaissanceText: "Королевские резиденции, сграффито и европейская придворная культура.",
-    baroqueTitle: "Барокко",
-    baroqueText: "Динамичные фасады, костёлы, монастыри и выразительные вертикали центра.",
-    classicTitle: "Классицизм",
-    classicText: "Сдержанная симметрия дворцовых и городских фасадов XVIII–XIX веков.",
-    urbanTitle: "Городская застройка XIX–XX веков",
-    urbanText: "Пешеходные улицы, торговые дома и живая повседневность старого центра.",
+    heroEyebrow: "Новый замок в Гродно",
+    heroTitle: "Новый замок: дворец, где история стала решением",
+    heroLead: "Одностраничный проект о королевской резиденции XVIII века, сеймах Речи Посполитой и памяти места на высоком берегу Немана.",
+    startWalk: "Начать историю",
+    watchRoute: "Смотреть главы",
+    factCentury: "строительство",
+    factRoute: "глав истории",
+    factLayers: "ключевых тем",
+    ideaEyebrow: "Концепция",
+    ideaTitle: "Не справочник, а история одного здания",
+    ideaText: "Этот сайт фокусируется на Новом замке в Гродно: почему дворец появился рядом со Старым замком, как он стал королевской резиденцией и местом сеймов, почему 1793 год сделал его политически важным, и как сегодня здание читается как музейный и исторический слой города.",
+    routeEyebrow: "Главы",
+    routeTitle: "Пять сцен из биографии замка",
+    placeKalozha: "Идея королевского дворца",
+    periodKalozha: "начало XVIII века",
+    placeOldCastle: "Проект и строительство",
+    periodOldCastle: "1737–1742",
+    placeNewCastle: "Первый сейм во дворце",
+    periodNewCastle: "1744",
+    placeFarny: "Последний сейм Речи Посполитой",
+    periodFarny: "1793",
+    placeSovetskaya: "Музейная память",
+    periodSovetskaya: "сегодня",
+    routeNote: "Сайт ведет не по туристическому списку, а по драматургии одного здания: замысел, архитектура, политические события, утрата прежнего государства и сегодняшняя память.",
+    architectureEyebrow: "Архитектура и смысл",
+    architectureTitle: "Что важно в Новом замке",
+    oldRusTitle: "Королевская резиденция",
+    oldRusText: "Дворец задумывался как место пребывания монарха и политических собраний.",
+    gothicTitle: "Сеймы Речи Посполитой",
+    gothicText: "Здание связано с парламентской историей государства и событиями XVIII века.",
+    renaissanceTitle: "Саксонский проект",
+    renaissanceText: "Проект связывают с Карлом Фридрихом Пёппельманом, придворным архитектором из Дрездена.",
+    baroqueTitle: "Берег Немана",
+    baroqueText: "Замок стоит в связке с высоким берегом, Старым замком и исторической панорамой города.",
+    classicTitle: "1793 год",
+    classicText: "Именно здесь прошел последний сейм Речи Посполитой, связанный со Вторым разделом.",
+    urbanTitle: "Музей сегодня",
+    urbanText: "Сейчас замок воспринимается как часть историко-музейного маршрута Гродно.",
     more: "Подробнее",
-    timelineEyebrow: "Таймлайн",
-    timelineTitle: "Как складывался образ города",
-    time1: "Коложская церковь",
-    time2: "Укрепление и развитие Старого замка",
-    time3: "Барочные храмы и монастыри",
-    time4: "Новый замок и политическая история",
-    time5: "Развитие городской застройки",
-    time6: "Смена эпох и сохранение исторического центра",
-    time7: "Город как культурный маршрут",
-    galleryEyebrow: "Галерея",
-    galleryTitle: "CSS-постеры для будущих фотографий",
-    poster1: "Замок над Неманом",
-    poster2: "Коложа на высоком берегу",
-    poster3: "Барочный силуэт Фарного костёла",
-    poster4: "Старый центр вечером",
-    poster5: "Архитектурные детали",
-    poster6: "Гродно как город маршрутов",
-    mapEyebrow: "Мини-карта",
-    mapTitle: "Художественная схема маршрута",
-    mapKalozha: "Коложа",
-    mapOldCastle: "Старый замок",
-    mapNewCastle: "Новый замок",
-    mapFarny: "Фарный костёл",
-    mapSovetskaya: "ул. Советская",
-    mapCaption: "Схема не является географической картой: это визуальный маршрут по историческим слоям.",
-    whyEyebrow: "Почему это интересно",
-    whyTitle: "Гродно можно читать как книгу",
-    whyText: "Гродно можно читать как книгу: каждый район, храм, замок и улица показывают отдельный слой времени. Этот проект показывает город не как набор достопримечательностей, а как живую систему памяти, архитектуры и маршрутов.",
-    sourcesEyebrow: "Факты",
-    sourcesTitle: "Источники для исторических сведений",
+    timelineEyebrow: "Хронология",
+    timelineTitle: "Короткая линия времени",
+    time1: "Идея нового королевского дворца в Гродно",
+    time2: "Строительство дворца",
+    time3: "Первый генеральный сейм во дворце",
+    time4: "Последний сейм Речи Посполитой",
+    time5: "Разделы государства и смена функции места",
+    time6: "Поздние перестройки и музейный слой",
+    time7: "Новый замок как точка исторической памяти",
+    galleryEyebrow: "Визуальный язык",
+    galleryTitle: "Атмосфера проекта без случайных картинок",
+    poster1: "Дворец над Неманом",
+    poster2: "Зал политических решений",
+    poster3: "Чертеж саксонского двора",
+    poster4: "1793: тишина сейма",
+    poster5: "Фрагменты дворцового фасада",
+    poster6: "Замковая гора и маршрут памяти",
+    mapEyebrow: "Схема",
+    mapTitle: "Как читать историю замка",
+    mapKalozha: "замысел",
+    mapOldCastle: "проект",
+    mapNewCastle: "1744",
+    mapFarny: "1793",
+    mapSovetskaya: "музей",
+    mapCaption: "Это не географическая карта, а схема чтения здания: от идеи дворца к музейной памяти.",
+    whyEyebrow: "Почему это сильнее",
+    whyTitle: "Один замок лучше раскрывает тему, чем общий список",
+    whyText: "Новый замок интересен не только фасадом. В нем сходятся архитектура, власть, дипломатия, драматичный конец Речи Посполитой и современная музейная память. Такой фокус делает сайт цельным: у проекта появляется главный герой, конфликт, хронология и понятная визуальная система.",
+    sourcesEyebrow: "Источники",
+    sourcesTitle: "Проверенная база фактов",
     footerCredit: "Designed as a portfolio concept by Ksu / @aihappyfuture"
   },
   en: {
     navHome: "Home",
-    navRoute: "Route",
+    navRoute: "Chapters",
     navArchitecture: "Architecture",
     navTimeline: "Timeline",
-    navGallery: "Gallery",
+    navGallery: "Visuals",
     navContacts: "Contacts",
-    heroEyebrow: "A historical walk above the Neman",
-    heroTitle: "Grodno: A City Built in Layers",
-    heroLead: "An interactive journey through the architecture, castles and historical memory of the city above the Neman River.",
-    startWalk: "Start the walk",
-    watchRoute: "View route",
-    factCentury: "century Kalozha",
-    factRoute: "route points",
-    factLayers: "architectural layers",
-    ideaEyebrow: "Project idea",
-    ideaTitle: "A city read through layers",
-    ideaText: "Grodno is fascinating because different historical layers are visible in one city: Old Rus architecture, Castle Hill, royal history, Baroque landmarks, old streets and urban buildings from the 19th and 20th centuries. This website turns them into one visual journey.",
-    routeEyebrow: "Route",
-    routeTitle: "Five points of a historical walk",
-    placeKalozha: "Kalozha Church",
-    periodKalozha: "12th century",
-    placeOldCastle: "Old Castle",
-    periodOldCastle: "11th–16th centuries",
-    placeNewCastle: "New Castle",
-    periodNewCastle: "18th century",
-    placeFarny: "St. Francis Xavier Cathedral",
-    periodFarny: "17th–18th centuries",
-    placeSovetskaya: "Old center and Sovetskaya Street",
-    periodSovetskaya: "19th–20th centuries",
-    routeNote: "The route is designed as a visual walk: from 12th-century stone architecture to castles, Baroque accents and the urban fabric of the old center.",
-    architectureEyebrow: "Architecture",
-    architectureTitle: "Architectural Layers",
-    oldRusTitle: "Old Rus architecture",
-    oldRusText: "Stone plasticity, polychrome inserts and a rare 12th-century local school.",
-    gothicTitle: "Gothic and defensive forms",
-    gothicText: "Towers, fortifications and the logic of a city on the high bank of the Neman.",
-    renaissanceTitle: "Renaissance",
-    renaissanceText: "Royal residences, sgraffito and European court culture.",
-    baroqueTitle: "Baroque",
-    baroqueText: "Dynamic facades, churches, monasteries and expressive verticals of the center.",
-    classicTitle: "Classicism",
-    classicText: "Restrained symmetry of palace and urban facades of the 18th–19th centuries.",
-    urbanTitle: "Urban buildings of the 19th–20th centuries",
-    urbanText: "Pedestrian streets, trading houses and the living everyday rhythm of the old center.",
+    heroEyebrow: "The New Castle in Grodno",
+    heroTitle: "The New Castle: a palace where history became a decision",
+    heroLead: "A one-page project about an 18th-century royal residence, the Sejms of the Polish-Lithuanian Commonwealth and the memory of a place above the Neman.",
+    startWalk: "Start the story",
+    watchRoute: "View chapters",
+    factCentury: "construction",
+    factRoute: "story chapters",
+    factLayers: "key themes",
+    ideaEyebrow: "Concept",
+    ideaTitle: "Not a glossary, but the story of one building",
+    ideaText: "This website focuses on the New Castle in Grodno: why the palace appeared next to the Old Castle, how it became a royal residence and a place for Sejms, why 1793 made it politically important, and how the building is read today as a museum and historical layer of the city.",
+    routeEyebrow: "Chapters",
+    routeTitle: "Five scenes from the castle's biography",
+    placeKalozha: "The idea of a royal palace",
+    periodKalozha: "early 18th century",
+    placeOldCastle: "Design and construction",
+    periodOldCastle: "1737–1742",
+    placeNewCastle: "First Sejm in the palace",
+    periodNewCastle: "1744",
+    placeFarny: "Last Sejm of the Commonwealth",
+    periodFarny: "1793",
+    placeSovetskaya: "Museum memory",
+    periodSovetskaya: "today",
+    routeNote: "The site follows the drama of one building: its idea, architecture, political events, the loss of the old state and today's memory.",
+    architectureEyebrow: "Architecture and meaning",
+    architectureTitle: "What matters in the New Castle",
+    oldRusTitle: "Royal residence",
+    oldRusText: "The palace was conceived as a place for the monarch and political assemblies.",
+    gothicTitle: "Sejms of the Commonwealth",
+    gothicText: "The building is tied to parliamentary history and the political events of the 18th century.",
+    renaissanceTitle: "Saxon design",
+    renaissanceText: "The project is linked to Carl Friedrich Pöppelmann, a court architect from Dresden.",
+    baroqueTitle: "The Neman bank",
+    baroqueText: "The castle works with the high bank, the Old Castle and the historic panorama of the city.",
+    classicTitle: "The year 1793",
+    classicText: "The last Sejm of the Polish-Lithuanian Commonwealth, linked with the Second Partition, was held here.",
+    urbanTitle: "Museum today",
+    urbanText: "Today the castle is perceived as part of Grodno's historical and museum route.",
     more: "Details",
     timelineEyebrow: "Timeline",
-    timelineTitle: "How the image of the city formed",
-    time1: "Kalozha Church",
-    time2: "Strengthening and development of the Old Castle",
-    time3: "Baroque churches and monasteries",
-    time4: "New Castle and political history",
-    time5: "Development of urban buildings",
-    time6: "Changing eras and preserving the historic center",
-    time7: "The city as a cultural route",
-    galleryEyebrow: "Gallery",
-    galleryTitle: "CSS posters for future photos",
-    poster1: "Castle above the Neman",
-    poster2: "Kalozha on the high bank",
-    poster3: "Baroque silhouette of the cathedral",
-    poster4: "Old center in the evening",
-    poster5: "Architectural details",
-    poster6: "Grodno as a city of routes",
-    mapEyebrow: "Mini map",
-    mapTitle: "Artistic route scheme",
-    mapKalozha: "Kalozha",
-    mapOldCastle: "Old Castle",
-    mapNewCastle: "New Castle",
-    mapFarny: "Cathedral",
-    mapSovetskaya: "Sovetskaya St.",
-    mapCaption: "The scheme is not a geographic map: it is a visual route through historical layers.",
-    whyEyebrow: "Why it matters",
-    whyTitle: "Grodno can be read like a book",
-    whyText: "Grodno can be read like a book: every district, church, castle and street reveals a separate layer of time. This project presents the city not as a list of landmarks, but as a living system of memory, architecture and routes.",
-    sourcesEyebrow: "Facts",
-    sourcesTitle: "Sources for historical information",
+    timelineTitle: "A short line of time",
+    time1: "Idea of a new royal palace in Grodno",
+    time2: "Construction of the palace",
+    time3: "First General Sejm in the palace",
+    time4: "Last Sejm of the Commonwealth",
+    time5: "Partitions of the state and a changed function",
+    time6: "Later transformations and the museum layer",
+    time7: "The New Castle as a point of historical memory",
+    galleryEyebrow: "Visual language",
+    galleryTitle: "Project atmosphere without random images",
+    poster1: "Palace above the Neman",
+    poster2: "Hall of political decisions",
+    poster3: "Drawing of a Saxon court",
+    poster4: "1793: the silence of the Sejm",
+    poster5: "Fragments of the palace facade",
+    poster6: "Castle Hill and the route of memory",
+    mapEyebrow: "Scheme",
+    mapTitle: "How to read the castle's history",
+    mapKalozha: "idea",
+    mapOldCastle: "design",
+    mapNewCastle: "1744",
+    mapFarny: "1793",
+    mapSovetskaya: "museum",
+    mapCaption: "This is not a geographic map, but a reading scheme: from the palace idea to museum memory.",
+    whyEyebrow: "Why this is stronger",
+    whyTitle: "One castle tells the theme better than a broad list",
+    whyText: "The New Castle is interesting not only as a facade. It brings together architecture, power, diplomacy, the dramatic end of the Polish-Lithuanian Commonwealth and modern museum memory. This focus gives the project a hero, a conflict, a timeline and a clear visual system.",
+    sourcesEyebrow: "Sources",
+    sourcesTitle: "Verified factual base",
     footerCredit: "Designed as a portfolio concept by Ksu / @aihappyfuture"
   }
 };
@@ -161,122 +161,122 @@ const content = {
   ru: {
     places: {
       kalozha: {
-        title: "Коложская церковь",
-        period: "XII век",
-        text: "Храм святых Бориса и Глеба, известный как Коложская церковь, относится к редким памятникам древней каменной архитектуры Гродно. UNESCO указывает строительство в 1180-х годах на высоком правом берегу Немана. В проекте это начало каменной памяти города."
+        title: "Идея королевского дворца",
+        period: "начало XVIII века",
+        text: "По данным Гродненского историко-археологического музея, идея построить новый королевский дворец в Гродно принадлежала Августу II. Дворец должен был стать резиденцией и местом заседаний генерального сейма Речи Посполитой."
       },
       oldCastle: {
-        title: "Старый замок",
-        period: "XI–XVI века",
-        text: "Замковая гора связана с ранней крепостью Гродно, оборонительной архитектурой и королевской историей. Сайт Гродненского музея описывает Старый замок как резиденцию, связанную со Стефаном Баторием, а Belarus.by подчеркивает значение гродненских замков как сохранившихся королевских резиденций на территории Беларуси."
+        title: "Проект и строительство",
+        period: "1737–1742",
+        text: "Музей Гродно указывает, что проект дворца разработал Карл Фридрих Пёппельман, придворный архитектор из Дрездена. Строительство продолжалось с 1737 по 1742 год, уже при Августе III."
       },
       newCastle: {
-        title: "Новый замок",
-        period: "XVIII век",
-        text: "Новый замок строился как королевский дворец и место заседаний сейма Речи Посполитой. По данным Гродненского музея, строительство продолжалось в 1737–1742 годах; Belarus.by связывает его с важными политическими событиями, включая сейм 1793 года."
+        title: "Первый сейм во дворце",
+        period: "1744",
+        text: "Первое заседание генерального сейма в Новом замке состоялось в 1744 году. Это важная деталь: здание изначально было не только резиденцией, но и политической площадкой."
       },
       farny: {
-        title: "Фарный костёл Святого Франциска Ксаверия",
-        period: "XVII–XVIII века",
-        text: "Костёл Святого Франциска Ксаверия — один из главных барочных акцентов старого центра. Belarus.by относит его к архитектурным памятникам позднего XVII–XVIII века и приводит как пример барокко в Гродно."
+        title: "Последний сейм Речи Посполитой",
+        period: "1793",
+        text: "В 1793 году в Новом замке прошел последний сейм Речи Посполитой. Музей Гродно пишет, что именно этот сейм ратифицировал Второй раздел государства между Россией и Пруссией."
       },
       sovetskaya: {
-        title: "Старый центр и улица Советская",
-        period: "XIX–XX века",
-        text: "Старый центр показывает городскую ткань поздних эпох: пешеходную прогулку, фасады, торговые дома и повседневную жизнь. В проекте улица Советская показана как слой городской памяти, а не как точная историческая реконструкция."
+        title: "Музейная память",
+        period: "сегодня",
+        text: "Сегодня Новый замок важен как историческое место и часть музейного маршрута Гродно. В проекте он показан как здание, где архитектура, политика и память остаются в одном пространстве."
       }
     },
     layers: {
       oldRus: {
-        title: "Древнерусская архитектура",
-        period: "XII век",
-        text: "Коложская церковь помогает показать локальную каменную традицию: храм на высоком берегу Немана, полихромные вставки и редкий для региона архитектурный язык."
+        title: "Королевская резиденция",
+        period: "XVIII век",
+        text: "Belarus.by отмечает, что Старый и Новый замки Гродно являются сохранившимися королевскими резиденциями на территории Беларуси. Это делает Новый замок не просто городской постройкой, а символом политического статуса Гродно."
       },
       gothic: {
-        title: "Готика и оборонительные формы",
-        period: "XIV–XVI века",
-        text: "Оборонительный слой Гродно связан с замковой горой, укреплениями и жизнью города на границе культурных и политических пространств."
+        title: "Сеймы Речи Посполитой",
+        period: "1744 и 1793",
+        text: "Дворец связан с заседаниями генерального сейма. Поэтому в визуале сайта важны не только фасады, но и тема зала, решения, тишины, давления и официальной церемонии."
       },
       renaissance: {
-        title: "Ренессанс",
-        period: "XVI век",
-        text: "Ренессансный слой читается через историю Старого замка и резиденции Стефана Батория, где город получает масштаб королевского центра."
+        title: "Саксонский проект",
+        period: "1737–1742",
+        text: "Авторство проекта музей связывает с Карлом Фридрихом Пёппельманом. Это хороший повод строить визуал через архитектурные чертежи, оси, сетки и дворцовые пропорции, а не через случайные иллюстрации."
       },
       baroque: {
-        title: "Барокко",
-        period: "XVII–XVIII века",
-        text: "Барокко формирует выразительный силуэт старого центра: костёлы, монастыри, высокие фасады и насыщенная пластика архитектурных деталей."
+        title: "Берег Немана",
+        period: "городская панорама",
+        text: "Новый замок находится рядом со Старым замком и включен в замковый ландшафт над Неманом. Поэтому сайт может использовать мотив террасы, реки и высокой линии берега."
       },
       classic: {
-        title: "Классицизм",
-        period: "XVIII–XIX века",
-        text: "Классицистическая логика добавляет городу симметрию, сдержанность и дворцовую ясность, заметную в поздних резиденциальных и городских слоях."
+        title: "1793 год",
+        period: "последний сейм",
+        text: "1793 год дает проекту драматический центр: дворец становится местом, где архитектурная история пересекается с концом политической эпохи."
       },
       urban: {
-        title: "Городская застройка XIX–XX веков",
-        period: "XIX–XX века",
-        text: "Этот слой показывает Гродно как живой старый центр: улицы, витрины, торговые дома, кафе и ежедневные маршруты жителей и гостей."
+        title: "Музей сегодня",
+        period: "современный слой",
+        text: "Современное восприятие Нового замка связано с музеем, маршрутом по центру Гродно и интересом к тому, как исторические здания меняют функцию, но сохраняют память."
       }
     }
   },
   en: {
     places: {
       kalozha: {
-        title: "Kalozha Church",
-        period: "12th century",
-        text: "The Church of Saints Boris and Gleb, known as Kalozha Church, is a rare monument of Grodno's ancient stone architecture. UNESCO dates its construction to the 1180s on the high right bank of the Neman. In this project, it is the beginning of the city's stone memory."
+        title: "The idea of a royal palace",
+        period: "early 18th century",
+        text: "According to the Grodno Museum, the idea to build a new royal palace in Hrodna belonged to Augustus II. The palace was intended to become both a residence and a venue for the General Sejm of the Polish-Lithuanian Commonwealth."
       },
       oldCastle: {
-        title: "Old Castle",
-        period: "11th–16th centuries",
-        text: "Castle Hill is connected with Grodno's early fortress, defensive architecture and royal history. The Grodno Museum describes the Old Castle as a residence linked with Stephen Bathory, while Belarus.by emphasizes the significance of Grodno's castles as surviving royal residences in Belarus."
+        title: "Design and construction",
+        period: "1737–1742",
+        text: "The Grodno Museum states that the palace project was conceived by Carl Friedrich Pöppelmann, a court architect from Dresden. Construction lasted from 1737 to 1742, during the reign of Augustus III."
       },
       newCastle: {
-        title: "New Castle",
-        period: "18th century",
-        text: "The New Castle was built as a royal palace and a place for sessions of the General Sejm of the Polish-Lithuanian Commonwealth. According to the Grodno Museum, construction lasted from 1737 to 1742; Belarus.by connects it with major political events, including the Sejm of 1793."
+        title: "First Sejm in the palace",
+        period: "1744",
+        text: "The first session of the General Sejm in the New Castle was held in 1744. This matters because the building was not only a residence, but also a political venue."
       },
       farny: {
-        title: "St. Francis Xavier Cathedral",
-        period: "17th–18th centuries",
-        text: "St. Francis Xavier Cathedral is one of the main Baroque accents of the old center. Belarus.by lists it among Grodno's architectural monuments of the late 17th–18th centuries and cites it as an example of Baroque architecture."
+        title: "Last Sejm of the Commonwealth",
+        period: "1793",
+        text: "In 1793, the last Sejm of the Polish-Lithuanian Commonwealth was held in the New Castle. The Grodno Museum notes that this Sejm ratified the Second Partition of the state between Russia and Prussia."
       },
       sovetskaya: {
-        title: "Old center and Sovetskaya Street",
-        period: "19th–20th centuries",
-        text: "The old center reveals later urban layers: a pedestrian walk, facades, trading houses and everyday city life. In this project, Sovetskaya Street is presented as a layer of urban memory rather than an exact historical reconstruction."
+        title: "Museum memory",
+        period: "today",
+        text: "Today the New Castle matters as a historical place and part of Grodno's museum route. In this project, it is shown as a building where architecture, politics and memory remain in one space."
       }
     },
     layers: {
       oldRus: {
-        title: "Old Rus architecture",
-        period: "12th century",
-        text: "Kalozha Church shows a local stone tradition: a church on the high bank of the Neman, polychrome inserts and a rare architectural language for the region."
+        title: "Royal residence",
+        period: "18th century",
+        text: "Belarus.by notes that Grodno's Old and New Castles are surviving royal residences in Belarus. This makes the New Castle not just a city building, but a sign of Grodno's political status."
       },
       gothic: {
-        title: "Gothic and defensive forms",
-        period: "14th–16th centuries",
-        text: "Grodno's defensive layer is connected with Castle Hill, fortifications and the life of a city located between cultural and political spaces."
+        title: "Sejms of the Commonwealth",
+        period: "1744 and 1793",
+        text: "The palace is tied to sessions of the General Sejm. The site's visual language should therefore include halls, decisions, silence, pressure and ceremony, not only facades."
       },
       renaissance: {
-        title: "Renaissance",
-        period: "16th century",
-        text: "The Renaissance layer is read through the history of the Old Castle and Stephen Bathory's residence, where the city gains the scale of a royal center."
+        title: "Saxon design",
+        period: "1737–1742",
+        text: "The museum links the design to Carl Friedrich Pöppelmann. This supports a visual system based on plans, axes, grids and palace proportions rather than random illustration."
       },
       baroque: {
-        title: "Baroque",
-        period: "17th–18th centuries",
-        text: "Baroque shapes the expressive silhouette of the old center: churches, monasteries, tall facades and rich architectural detail."
+        title: "The Neman bank",
+        period: "city panorama",
+        text: "The New Castle stands near the Old Castle and belongs to the castle landscape above the Neman. The site can use the motif of a terrace, river and high bank line."
       },
       classic: {
-        title: "Classicism",
-        period: "18th–19th centuries",
-        text: "Classical logic adds symmetry, restraint and palace clarity to the city, visible in later residential and urban layers."
+        title: "The year 1793",
+        period: "last Sejm",
+        text: "The year 1793 gives the project its dramatic center: the palace becomes a place where architectural history meets the end of a political era."
       },
       urban: {
-        title: "Urban buildings of the 19th–20th centuries",
-        period: "19th–20th centuries",
-        text: "This layer presents Grodno as a living old center: streets, shopfronts, trading houses, cafes and everyday routes of residents and visitors."
+        title: "Museum today",
+        period: "modern layer",
+        text: "The modern perception of the New Castle is connected with the museum, the route through central Grodno and the question of how historical buildings change function while keeping memory."
       }
     }
   }
@@ -311,8 +311,8 @@ function setLanguage(lang) {
   document.querySelector(".lang-current").textContent = lang.toUpperCase();
   document.querySelector(".lang-next").textContent = lang === "ru" ? "EN" : "RU";
   document.title = lang === "ru"
-    ? "Grodno Layers | Гродно: город на слоях времени"
-    : "Grodno Layers | Grodno: A City Built in Layers";
+    ? "Новый замок в Гродно | История королевской резиденции"
+    : "The New Castle in Grodno | Story of a Royal Residence";
 }
 
 function openModal(entry) {
@@ -393,7 +393,7 @@ document.querySelectorAll(".reveal").forEach((node) => revealObserver.observe(no
 
 window.addEventListener("scroll", () => {
   if (!heroArt) return;
-  const offset = Math.min(window.scrollY * 0.08, 42);
+  const offset = Math.min(window.scrollY * 0.055, 28);
   heroArt.style.transform = `translateY(${offset}px)`;
 }, { passive: true });
 
